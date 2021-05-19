@@ -1,0 +1,18 @@
+How to install minikube on ubuntu 18.04 or 20 
+
+https://www.radishlogic.com/kubernetes/running-minikube-in-aws-ec2-ubuntu/
+
+
+we need to install some dependcies in same  seerver while installing minikube
+
+install and soft link slove same problem.
+sudo apt-get install -y conntrack
+root@debian:/usr/sbin# cd /usr/bin/
+root@debian:/usr/bin# ln -s /usr/sbin/conntrack conntrack
+
+root@debian:/usr/bin# minikube start --driver=none
+
+2nd way to install
+
+https://computingforgeeks.com/how-to-install-minikube-on-ubuntu-debian-linux/#:~:text=How%20To%20Install%20Minikube%20on%20Ubuntu%2020.04%2F18.04%20%26,Basic%20operations.%20...%207%20Enable%20Kubernetes%20Dashboard.%20
+
