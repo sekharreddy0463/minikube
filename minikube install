@@ -16,3 +16,15 @@ root@debian:/usr/bin# minikube start --driver=none
 
 https://computingforgeeks.com/how-to-install-minikube-on-ubuntu-debian-linux/#:~:text=How%20To%20Install%20Minikube%20on%20Ubuntu%2020.04%2F18.04%20%26,Basic%20operations.%20...%207%20Enable%20Kubernetes%20Dashboard.%20
 
+
+
+ERROR: WHEN WE GET LIKE THIS ERROR WE SHOULD FOLLOW THESE COMMANDS
+Error from server (NotFound): deployments.apps "hello-minikube" not found
+
+
+
+RUN kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.10
+
+2.RUN kubectl expose deployment hello-minikube --type=NodePort --port=8080
+
+3.RUN minikube service hello-minikube --url
